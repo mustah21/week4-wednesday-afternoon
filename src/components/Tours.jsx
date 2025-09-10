@@ -21,7 +21,7 @@ const Tours = () => {
       <Title title="featured" subTitle="tours" />
 
       <div className="section-center featured-center">
-        {tours.map((tour) => {
+        {toursData.map((tour) => {
           return <Tour key={tour.id} 
           {...tour}
           removeTour = {() => removeTour(tour.id)} />;
